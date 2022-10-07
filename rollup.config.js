@@ -1,4 +1,4 @@
-import typescript from "@rollup/plugin-typescript";
+import typescript from "rollup-plugin-typescript2";
 /* eslint-disable import/no-anonymous-default-export */
 import del from "rollup-plugin-delete";
 import pkg from "./package.json";
@@ -13,7 +13,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 export default [
   {
-    input: "src/main.ts",
+    input: "src/index.ts",
     output: [
       {
         file: "public/bundle.js",
@@ -29,9 +29,7 @@ export default [
       commonjs(),
       postcss(), // use postcss plugin
       del({ targets: ["dist/*", "playground/src/component-lib"] }),
-      typescript({
-        include: ["src/**/*.ts"],
-      }),
+      typescript(),
       babel({
         babelHelpers: "bundled",
         exclude: "node_modules/**",

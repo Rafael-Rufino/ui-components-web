@@ -1,6 +1,6 @@
 import { Button } from "./components/button";
 import { CheckText } from "./components/checkText";
-import { Heading } from "./components/heading";
+import { Heading } from "./components/Heading";
 import { Input } from "./components/input";
 import { LinkIcon } from "./components/linkIcon";
 

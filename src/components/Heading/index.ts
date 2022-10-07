@@ -1,7 +1,7 @@
 import "../../global/styles.css";
 import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement("heading-app")
+@customElement("heading-ui")
 export class Heading extends LitElement {
   createRenderRoot() {
     return this;
