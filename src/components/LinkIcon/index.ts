@@ -1,26 +1,26 @@
-import "../../global/styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+import '../../global/styles.css'
+import { LitElement, html, customElement, property } from 'lit-element'
 
-@customElement("linkicon-app")
+@customElement('linkicon-app')
 export class LinkIcon extends LitElement {
   createRenderRoot() {
-    return this;
+    return this
   }
 
   @property()
-  name!: string;
+  name!: string
 
   @property()
-  title!: string;
+  title!: string
 
   @property()
-  target!: string;
+  target!: string
 
   @property()
-  href!: string;
+  href!: string
 
   @property()
-  src!: string;
+  src!: string
 
   render() {
     return html`
@@ -33,6 +33,6 @@ export class LinkIcon extends LitElement {
           >${this.name}</a
         >
       </div>
-    `;
+    `
   }
 }

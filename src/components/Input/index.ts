@@ -1,29 +1,29 @@
-import "../../global/styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+import '../../global/styles.css'
+import { LitElement, html, customElement, property } from 'lit-element'
 
-@customElement("input-ui")
+@customElement('input-ui')
 export class Input extends LitElement {
   createRenderRoot() {
-    return this;
+    return this
   }
 
   @property()
-  id!: string;
+  id!: string
 
   @property()
-  label!: string;
+  label!: string
 
   @property()
-  type!: "text" | "number" | "date" | "email" | "password";
+  type!: 'text' | 'number' | 'date' | 'email' | 'password'
 
   @property()
-  placeholder!: string;
+  placeholder!: string
 
   @property()
-  onChange!: (event: CustomEvent<HTMLInputElement>) => void;
+  onChange!: (event: CustomEvent<HTMLInputElement>) => void
 
   @property()
-  value!: string | number | Date;
+  value!: string | number | Date
 
   render() {
     return html`
@@ -38,6 +38,6 @@ export class Input extends LitElement {
           placeholder=${this.placeholder}
         />
       </div>
-    `;
+    `
   }
 }

@@ -1,20 +1,20 @@
-import "../../global/styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+import '../../global/styles.css'
+import { LitElement, html, customElement, property } from 'lit-element'
 
-@customElement("button-ui")
+@customElement('button-ui')
 class Button extends LitElement {
   createRenderRoot() {
-    return this;
+    return this
   }
 
   @property()
-  name!: string;
+  name!: string
 
   @property()
-  onClick!: (event: CustomEvent<HTMLButtonElement>) => void;
+  onClick!: (event: CustomEvent<HTMLButtonElement>) => void
 
   @property()
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset'
 
   render() {
     return html`
@@ -26,8 +26,8 @@ class Button extends LitElement {
       >
         ${this.name}
       </button>
-    `;
+    `
   }
 }
 
-export { Button };
+export { Button }

@@ -1,17 +1,17 @@
-import "../../global/styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+import '../../global/styles.css'
+import { LitElement, html, customElement, property } from 'lit-element'
 
-@customElement("heading-ui")
+@customElement('heading-ui')
 export class Heading extends LitElement {
   createRenderRoot() {
-    return this;
+    return this
   }
 
   @property()
-  title!: string;
+  title!: string
 
   @property()
-  description!: string;
+  description!: string
 
   render() {
     return html`
@@ -20,9 +20,9 @@ export class Heading extends LitElement {
           ${this.title}
         </h1>
         <p class="text-base text-gray-400 leading-normal pb-6 pt-4">
-          ${this.description ? html`${this.description}` : ""}
+          ${this.description ? html`${this.description}` : ''}
         </p>
       </div>
-    `;
+    `
   }
 }

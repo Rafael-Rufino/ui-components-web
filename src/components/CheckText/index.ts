@@ -1,20 +1,20 @@
-import "../../global/styles.css";
-import { LitElement, html, customElement, property } from "lit-element";
+import '../../global/styles.css'
+import { LitElement, html, customElement, property } from 'lit-element'
 
-@customElement("checktext-ui")
+@customElement('checktext-ui')
 export class CheckText extends LitElement {
   createRenderRoot() {
-    return this;
+    return this
   }
 
   @property()
-  id!: string;
+  id!: string
 
   @property()
-  name!: string;
+  name!: string
 
   @property()
-  value!: string;
+  value!: string
 
   render() {
     return html`
@@ -24,6 +24,6 @@ export class CheckText extends LitElement {
           >${this.name}</label
         >
       </div>
-    `;
+    `
   }
 }

@@ -6,11 +6,12 @@
     <title>LitElement w/ Tailwind</title>
     <style>
       .container {
-        background: "#fff";
+        background: '#fff';
       }
       .content {
         max-width: 432px;
         width: 100%;
+        height: 100vh;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -22,31 +23,31 @@
   <body>
     <div class="container">
       <div class="content">
-        <heading-app
+        <heading-ui
           title="Acessando sua conta"
           description="Informe seu login e senha para continuar"
-        ></heading-app>
-        <input-app
+        ></heading-ui>
+        <input-ui
           label="Seu login"
           placeholder="E-mail, CPF, Usuário ou Celular"
           type="text"
           onChange="{}"
-        ></input-app>
-        <input-app
+        ></input-ui>
+        <input-ui
           label="Sua senha"
           placeholder="Digite a sua senha"
           type="password"
           onChange="{}"
-        ></input-app>
-        <checktext-app name="Manter conectado"></checktext-app>
-        <button-app type="submit" name="Acessar sua conta" onClick="{}">
-        </button-app>
-        <linkicon-app
+        ></input-ui>
+        <checktext-ui name="Manter conectado"></checktext-ui>
+        <button-ui type="submit" name="Acessar sua conta" onClick="{}">
+        </button-ui>
+        <linkicon-ui
           src="../assets/lock.svg"
           title="Você deseja redefinir a senha ?"
           href="https://www.gazin.com.br"
           name="Esqueceu sua senha?"
-        ></linkicon-app>
+        ></linkicon-ui>
       </div>
     </div>
     <script type="module" src="bundle.js"></script>
