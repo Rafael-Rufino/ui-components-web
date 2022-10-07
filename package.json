@@ -1,6 +1,6 @@
 {
   "name": "@rafael-rufino/ui-components-web",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Minha biblioteca de components Npm",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
