@@ -1,7 +1,7 @@
 import "../../global/styles.css";
 import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement("input-app")
+@customElement("input-ui")
 export class Input extends LitElement {
   createRenderRoot() {
     return this;

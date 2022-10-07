@@ -1,7 +1,7 @@
 import "../../global/styles.css";
 import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement("checktext-app")
+@customElement("checktext-ui")
 export class CheckText extends LitElement {
   createRenderRoot() {
     return this;

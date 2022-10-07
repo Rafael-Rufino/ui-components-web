@@ -1,7 +1,7 @@
 import "../../global/styles.css";
 import { LitElement, html, customElement, property } from "lit-element";
 
-@customElement("button-app")
+@customElement("button-ui")
 class Button extends LitElement {
   createRenderRoot() {
     return this;
