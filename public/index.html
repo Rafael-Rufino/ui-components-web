@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt-BR">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LitElement w/ Tailwind</title>
+    <style>
+      .container {
+        background: "#fff";
+      }
+      .content {
+        max-width: 432px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <heading-app
+          title="Acessando sua conta"
+          description="Informe seu login e senha para continuar"
+        ></heading-app>
+        <input-app
+          label="Seu login"
+          placeholder="E-mail, CPF, Usuário ou Celular"
+          type="text"
+          onChange="{}"
+        ></input-app>
+        <input-app
+          label="Sua senha"
+          placeholder="Digite a sua senha"
+          type="password"
+          onChange="{}"
+        ></input-app>
+        <checktext-app name="Manter conectado"></checktext-app>
+        <button-app type="submit" name="Acessar sua conta" onClick="{}">
+        </button-app>
+        <linkicon-app
+          src="../assets/lock.svg"
+          title="Você deseja redefinir a senha ?"
+          href="https://www.gazin.com.br"
+          name="Esqueceu sua senha?"
+        ></linkicon-app>
+      </div>
+    </div>
+    <script type="module" src="bundle.js"></script>
+  </body>
+</html>
